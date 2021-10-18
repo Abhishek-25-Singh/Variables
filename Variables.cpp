@@ -36,6 +36,23 @@ int main()
     std::cout << " sad = " << std::setiosflags(std::ios::boolalpha) << sad << std::endl;
 
    
+    std::this_thread::sleep_for(std::chrono::seconds(5));
+    // c++11 can deduce the type of a variable for us,
+    auto i4 = i3 + 7;
+    std::cout << " i4 = " << i4 << std::endl;
+    std::this_thread::sleep_for(std::chrono::seconds(5));
+    int num1;
+    //int 1num;
+    int num_1;
+    int _num1;
+    // int #num1 ;
+    int num$1;
+    // [A-Z, a-z , _ , $ , 0-9 ]
+    char gradev;
+    std::string first_name;
+    //std::string last name ; // No space should contain in the variable
+    std::string LastName; //lowercamel
+    auto name = "Abhishek";
     
     return 0;
 
